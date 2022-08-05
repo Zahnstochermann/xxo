@@ -4,8 +4,8 @@ import './App.scss';
 
 function App() {
   const [gameState, setGameState] = useState({
-    redCups: [3, 3, 3],
-    blueCups: [3, 3, 3],
+    redCups: [2,2,2],
+    blueCups: [2,2,2],
     turn: "red",
     grid: [
       {
