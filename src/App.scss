@@ -1,0 +1,95 @@
+.app {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-columns: 100px 50px 100px;
+  // grid-template-rows: 80px auto 80px; 
+  grid-template-rows: 120px;
+  // column-gap: 16px;
+  // row-gap: 16px;
+  width: 366px;
+}
+
+.game-grid__field {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ebebeb;
+  transition: background-color 150ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+}
+
+.field-cup {
+  border-radius: 50%;
+}
+
+.field-cup--null {
+  width: 0px;
+}
+.field-cup--0 {
+  width: 32px;
+  height: 32px;
+}
+.field-cup--1 {
+  width: 60px;
+  height: 60px;
+}
+.field-cup--2 {
+  width: 96px;
+  height: 96px;
+}
+
+.field-cup--red {
+  background-color: red;
+}
+.field-cup--blue {
+  background-color: blue;
+}
+
+.players-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.player {
+  padding: 8px;
+}
+
+.player--active {
+  background-color: lightblue;
+}
+
+.playercup {
+  padding: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+.playercup--selected {
+  border: 1px solid green;
+}
+.playercup--empty {
+  background-color: #ebebeb;
+  color: #aaa;
+  cursor: text;
+}
